@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&Ocy;&pcy;&icy;&scy;&acy;&ncy;&icy;&iecy; &vcy;&scy;&iecy;&khcy; &kcy;&lcy;&acy;&scy;&scy;&ocy;&vcy;&comma; &icy;&scy;&pcy;&ocy;&lcy;&softcy;&zcy;&ucy;&iecy;&mcy;&ycy;&khcy; &ncy;&acy; &pcy;&rcy;&ocy;&iecy;&kcy;&tcy;&iecy;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="описание-всех-классов-используемых-на-проекте">Описание всех классов, используемых на проекте</h1>
+<h2 id="userform">UserForm</h2>
+<h3 id="свойства">Свойства</h3>
+<ol>
+<li><code>loginForm</code> — объект формы авторизации</li>
+<li><code>registerForm</code> — объект формы регистрации</li>
+<li><code>loginErrorMessageBox</code> — объект окна вывода сообщений на странице авторизации</li>
+<li><code>registerErrorMessageBox</code> — объект окна вывода сообщений на странице регистрации</li>
+<li><code>loginFormCallback</code> — функция, которая будет выполняться при попытке авторизации</li>
+<li><code>registerFormCallback</code> — функция, которая будет выполняться при попытке регистрации</li>
+</ol>
+<h3 id="методы">Методы</h3>
+<ol>
+<li><code>constructor()</code> — создаёт объект</li>
+<li><code>setLoginErrorMessage(message)</code> — выводит сообщение с ошибкой при авторизации</li>
+<li><code>setRegisterErrorMessage(message)</code> — выводит сообщение с ошибкой при регистрации</li>
+<li><code>loginFormAction()</code> — обработчик события сабмита формы авторизации</li>
+<li><code>registerFormAction()</code> — обработчик события сабмита формы регистрации</li>
+<li><code>getData(form)</code> — метод получения данных из переданной формы</li>
+</ol>
+<h2 id="ratesboard">RatesBoard</h2>
+<h3 id="свойства-1">Свойства</h3>
+<ol>
+<li><code>tableBody</code> — объект тела таблицы для данных</li>
+</ol>
+<h3 id="методы-1">Методы</h3>
+<ol>
+<li><code>constructor()</code> — создаёт объект</li>
+<li><code>fillTable(data)</code> — принимает объект и заполняет таблицу данными</li>
+<li><code>clearTable()</code> — очищает таблицу</li>
+</ol>
+<h2 id="profilewidget">ProfileWidget</h2>
+<h3 id="метод">Метод</h3>
+<p><code>static showProfile(data)</code> — отображает данные пользователя</p>
+<h2 id="favoriteswidget">FavoritesWidget</h2>
+<h3 id="свойства-2">Свойства</h3>
+<ol>
+<li><code>favoritesTableBody</code> — объект таблицы избранного</li>
+<li><code>addUserToFavoritesForm</code> — объект формы для добавления пользователя в избранное</li>
+<li><code>favoritesMessageBox</code> — объект окна для вывода сообщений</li>
+<li><code>addUserCallback</code> — функция, которая будет выполняться при добавлении пользователя в избранное</li>
+<li><code>removeUserCallback</code>— функция, которая будет запускаться при попытке удаления пользователя из избранного</li>
+</ol>
+<h3 id="методы-2">Методы</h3>
+<ol>
+<li><code>constructor()</code> — создаёт объект</li>
+<li><code>fillTable(data)</code> — принимает объект и заполняет таблицу данными</li>
+<li><code>clearTable()</code> — очищает таблицу</li>
+<li><code>getData()</code> — метод получения данных из формы добавления пользователя</li>
+<li><code>setMessage(isSuccess, message)</code> — метод отображает сообщение (ошибку или успешность) в окне с информацией</li>
+</ol>
+<h2 id="moneymanager">MoneyManager</h2>
+<h3 id="свойства-3">Свойства</h3>
+<ol>
+<li><code>addMoneyForm</code> — объект формы добавления денег</li>
+<li><code>conversionMoneyForm</code> — объект формы конвертирования денег</li>
+<li><code>sendMoneyForm</code> — объект формы перевода денег</li>
+<li><code>errorMessageBlock</code> — объект окна вывода сообщения</li>
+<li><code>addMoneyCallback</code> — действие, которое будет выполняться при добавлении денег</li>
+<li><code>conversionMoneyCallback</code> — действие, которое будет выполняться при конвертировании денег</li>
+<li><code>sendMoneyCallback</code> — действие, которое будет выполняться при переводе денег</li>
+</ol>
+<h3 id="методы-3">Методы</h3>
+<ol>
+<li><code>constructor()</code> — создаёт объект</li>
+<li><code>addMoneyAction()</code> — обработчик события отправки формы добавления денег</li>
+<li><code>conversionMoneyAction()</code> — обработчик события отправки формы конвертации денег</li>
+<li><code>sendMoneyAction()</code> — обработчик события отправки формы перевода денег</li>
+<li><code>setMessage(isSuccess, message)</code> — метод отображает сообщение (ошибку или успешность) в окне с информацией</li>
+<li><code>updateUsersList(data)</code> — обновляет выпадающий список пользователей</li>
+</ol>
+<h2 id="logoutbutton">LogoutButton</h2>
+<h3 id="свойства-4">Свойства</h3>
+<ol>
+<li><code>logoutBtn</code> — объект кнопки выхода</li>
+<li><code>action</code> — действие, которое будет вызываться по клику и выполнять нужные действия</li>
+</ol>
+<h3 id="методы-4">Методы</h3>
+<ol>
+<li><code>constructor()</code> — создаёт объект</li>
+<li><code>logoutClick</code> — обработчик события клика по кнопке</li>
+</ol>
+<h2 id="apiconnector">ApiConnector</h2>
+<p><strong>Все методы являются статическими и все (кроме первого) отправляют запрос на сервер</strong></p>
+<ol>
+<li>
+<p><code>_parseResponseBody(response)</code> — пробует парсить тело ответа, если оно существует</p>
+</li>
+<li>
+<p><code>login({ login, password }, callback)</code> — запрос на авторизацию пользователя</p>
+</li>
+<li>
+<p><code>register({login, password}, callback)</code> — запрос на создание пользователя с переданными параметрами</p>
+</li>
+<li>
+<p><code>current(callback)</code> — запрос на получение текущего авторизованного пользователя</p>
+</li>
+<li>
+<p><code>logout(callback)</code> — запрос на деавторизацию пользователя</p>
+</li>
+<li>
+<p><code>getFavorites(callback)</code> — запрос на получение списка избранного</p>
+</li>
+<li>
+<p><code>addUserToFavorites({id, name}, callback)</code> — запрос на добавление пользователя в список избранного</p>
+</li>
+<li>
+<p><code>removeUserFromFavorites(id, callback)</code> — запрос на удаление пользователя из списка избранного</p>
+</li>
+<li>
+<p><code>transferMoney({ to, currency, amount }, callback)</code> — запрос на перевод денег авторизованного пользователя тому пользователю, чьё id передано</p>
+</li>
+<li>
+<p><code>addMoney({ currency, amount }, callback)</code> — запрос на добавление денег авторизованному пользователю</p>
+</li>
+<li>
+<p><code>convertMoney({ fromCurrency, targetCurrency, fromAmount }, callback)</code> — запрос на конвертацию денег авторизованного пользователя из одной валюты в другую</p>
+</li>
+<li>
+<p><code>getStocks(callback)</code> — запрос на получение курсов валют</p>
+</li>
+</ol>
+<p>Во всех запросах присутствует <code>callback</code> — это функция, в которую будет передаваться ответ от сервера и которая будет выполняться <strong>после получения ответа от сервера</strong>.</p>
+
+            
+            
+        </body>
+        </html>

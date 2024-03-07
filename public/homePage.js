@@ -45,9 +45,9 @@ moneyManager.addMoneyCallback = (data) => {
     ApiConnector.addMoney(data, (response) => {
         if (response.success) {
             ProfileWidget.showProfile(response.data);
-            moneyManager.setMessage(response.success, 'успешно');
+            moneyManager.setMessage(true, string ("Баланс пополнен"));
         }else {
-            moneyManager.setMessage(response.error, 'ошибка');
+            moneyManager.setMessage(false, string (response.error));
         }
     })
 }
@@ -60,7 +60,7 @@ moneyManager.conversionMoneyCallback = (data) => {
             ProfileWidget.showProfile(response.data);
             moneyManager.setMessage(response.success, 'успешно');
         } else {
-            moneyManager.setMessage(response.error, 'ошибка');
+            moneyManager.setMessage(response.error, 'ошибка!');
         }
     })
 }
@@ -70,9 +70,9 @@ moneyManager.sendMoneyCallback = (data) => {
 
         if (response.success) {
             ProfileWidget.showProfile(response.data);
-            moneyManager.setMessage(response.success, 'успешно');
+            moneyManager.setMessage(true, 'успешно');
         } else {
-            moneyManager.setMessage(response.error, 'ошибка');
+            moneyManager.setMessage(false, 'ошибка!');
         }
     })
 }
@@ -100,7 +100,7 @@ favoritesWidget.addUserCallback = (data) => {
             moneyManager.updateUsersList(response.data);
             favoritesWidget.setMessage(response.success, 'успешно');
         } else {
-            favoritesWidget.setMessage(response.error, 'ошибка');
+            favoritesWidget.setMessage(response.error, 'ошибка!');
         }
     })
 }
@@ -114,7 +114,7 @@ favoritesWidget.removeUserCallback = (data) => {
             moneyManager.updateUsersList(response.data);
            favoritesWidget.setMessage(response.success, 'успешно');
         } else {
-            favoritesWidget.setMessage(response.error, 'ошибка');
+            favoritesWidget.setMessage(response.error, 'ошибка!');
         }
     })
 }

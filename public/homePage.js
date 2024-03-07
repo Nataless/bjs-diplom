@@ -45,9 +45,9 @@ moneyManager.addMoneyCallback = (data) => {
     ApiConnector.addMoney(data, (response) => {
         if (response.success) {
             ProfileWidget.showProfile(response.data);
-            moneyManager.setMessage(true, string ("Баланс пополнен"));
+            moneyManager.setMessage(true, 'Баланс пополнен!');
         }else {
-            moneyManager.setMessage(false, string (response.error));
+            moneyManager.setMessage(false, 'Ошибка!');
         }
     })
 }
@@ -58,9 +58,9 @@ moneyManager.conversionMoneyCallback = (data) => {
     ApiConnector.convertMoney(data, (response) => {
         if (response.success) {
             ProfileWidget.showProfile(response.data);
-            moneyManager.setMessage(response.success, 'успешно');
+            moneyManager.setMessage(true, 'Конвертация произведена!');
         } else {
-            moneyManager.setMessage(response.error, 'ошибка!');
+            moneyManager.setMessage(false, 'Ошибка!');
         }
     })
 }
@@ -70,9 +70,9 @@ moneyManager.sendMoneyCallback = (data) => {
 
         if (response.success) {
             ProfileWidget.showProfile(response.data);
-            moneyManager.setMessage(true, 'успешно');
+            moneyManager.setMessage(true, 'Перевод выполнен!');
         } else {
-            moneyManager.setMessage(false, 'ошибка!');
+            moneyManager.setMessage(false, 'Ошибка!');
         }
     })
 }
@@ -98,9 +98,9 @@ favoritesWidget.addUserCallback = (data) => {
             favoritesWidget.clearTable();
             favoritesWidget.fillTable(response.data);
             moneyManager.updateUsersList(response.data);
-            favoritesWidget.setMessage(response.success, 'успешно');
+            favoritesWidget.setMessage(true, 'Пользователь успешно добавлен в Избранные контакты');
         } else {
-            favoritesWidget.setMessage(response.error, 'ошибка!');
+            favoritesWidget.setMessage(false, 'Ошибка!');
         }
     })
 }
@@ -112,9 +112,9 @@ favoritesWidget.removeUserCallback = (data) => {
             favoritesWidget.clearTable();
             favoritesWidget.fillTable(response.data);
             moneyManager.updateUsersList(response.data);
-           favoritesWidget.setMessage(response.success, 'успешно');
+           favoritesWidget.setMessage(true, 'Пользователь удален из Избранных контактов!');
         } else {
-            favoritesWidget.setMessage(response.error, 'ошибка!');
+            favoritesWidget.setMessage(false, 'Ошибка!');
         }
     })
 }

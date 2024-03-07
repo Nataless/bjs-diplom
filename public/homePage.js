@@ -33,10 +33,7 @@ const updateRatesBoard = () => {
 }
 updateRatesBoard();
 
-setInterval(() => {
-    updateRatesBoard();
-}, 60000);
-
+setInterval(updateRatesBoard, 60000);
 
 
 // Операции с деньгами
